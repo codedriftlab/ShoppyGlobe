@@ -7,6 +7,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Login Data:", { email, password });
+    alert("Login successful! (This is a demo, no real authentication)");
   };
 
   return (
