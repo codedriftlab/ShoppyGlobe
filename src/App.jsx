@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import ProductList from './components/ProductList'
-import ProductDetail from './components/ProductDetail'
-import Cart from './components/Cart'
-import NotFound from './components/NotFound'
-import Checkout from './components/Checkout'
-import Home from './Home'
-import Footer from '../Footer'
-import Login from './components/LoginSingin'
+
+// Lazy imports
+const Header = lazy(() => import('./components/Header'))
+const ProductList = lazy(() => import('./components/ProductList'))
+const ProductDetail = lazy(() => import('./components/ProductDetail'))
+const Cart = lazy(() => import('./components/Cart'))
+const NotFound = lazy(() => import('./components/NotFound'))
+const Checkout = lazy(() => import('./components/Checkout'))
+const Home = lazy(() => import('./Home'))
+const Footer = lazy(() => import('../Footer'))
+const Login = lazy(() => import('./components/LoginSingin'))
 
 const App = () => {
   return (

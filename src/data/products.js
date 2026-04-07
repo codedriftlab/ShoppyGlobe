@@ -210,7 +210,6 @@ const products = [
     }
   },
 
-  // ✅ New 4 items
   {
     id: 17,
     title: "Tablet",

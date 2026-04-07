@@ -22,7 +22,6 @@ function ProductDetails() {
         <p className="text-lg font-semibold mt-2">₹{product.price}</p>
         <div className="mb-4">
 
-  // specifications section using agian map to loop through specs object        
   <h3 className="font-semibold mb-2">Specifications:</h3>
 
   {product.specs &&
