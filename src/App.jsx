@@ -15,8 +15,7 @@ const Login = lazy(() => import('./components/LoginSingin'))
 const App = () => {
   return (
     <Router>
-    <Suspense fallback={<h2 className="text-2xl text-center mt-10 text-orange-300">Loading...</h2>}>
-
+    <Suspense fallback={<div className="flex items-center justify-center h-screen"><h2 className="text-2xl text-center mt-10 text-orange-300">Loading...</h2></div>}>
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
