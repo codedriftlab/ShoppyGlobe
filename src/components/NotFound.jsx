@@ -29,6 +29,13 @@ function NotFound() {
           </button>
         </Link>
 
+         <button
+          onClick={() => window.location.reload()}
+          className="px-5 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600 transition"
+        >
+          Retry
+        </button>
+
       </div>
     </div>
   );

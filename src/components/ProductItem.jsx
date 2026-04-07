@@ -19,11 +19,7 @@ function ProductItem({ product }) {
 
       <p>₹{product.price}</p>
 
-      // add to cart button
-
-      <button onClick={() => dispatch(addToCart(product))}>
-        Add to Cart
-      </button>
+      <button onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
 
     </div>
   );

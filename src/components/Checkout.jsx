@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { clearCart } from "../redux/cartSlice";
 
+// checkout page shows cart items, total price and a button to place order
 function Checkout() {
   const cartItems = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
@@ -10,11 +11,13 @@ function Checkout() {
     0
   );
 
+  //  handle checkout - for demo just clear cart and show alert
   const handleCheckout = () => {
     alert("Order placed successfully!");
     dispatch(clearCart());
   };
 
+  // if no items in cart, show message
   if (cartItems.length === 0) {
     return <h2 className="text-center mt-10">No items to checkout</h2>;
   }
@@ -26,6 +29,7 @@ function Checkout() {
       {cartItems.map(item => (
         <div key={item.id} className="flex justify-between mb-2">
           <span>{item.title} (x{item.quantity})</span>
+          <p>{item.description}</p>
           <span>₹{item.price * item.quantity}</span>
         </div>
       ))}

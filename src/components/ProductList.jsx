@@ -14,9 +14,7 @@ function ProductList() {
       <h2 className="text-2xl font-bold text-center mb-6">
         Products
       </h2>
-
-      // product grid
-
+      
       <div className="grid gap-6 grid-cols-4 place-items-center max-w-6xl mx-auto">
         {filteredProducts.map(product => (
           <ProductItem key={product.id} product={product} />
