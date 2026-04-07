@@ -18,7 +18,7 @@ function CartItem({ item }) {
       </div>
 
       {/* Quantity controls */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 mr-3">
         <button
           className="px-2 bg-gray-300"
           onClick={() => dispatch(decreaseQty(item.id))}

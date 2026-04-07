@@ -10,16 +10,12 @@ function ProductItem({ product }) {
 
   return (
     <div className="bg-white rounded-xl shadow p-4">
-      
-      <img
-        src={product.thumbnail || "https://via.placeholder.com/300"}
-        alt={product.title}
-        className="w-full h-40 object-cover mb-3"
-      />
 
-      <Link to={`/product/${product.id}`}>
-        <h3>{product.title}</h3>
-      </Link>
+      <Link to={`/products/${product.id}`}>
+  <img src={product.thumbnail} alt={product.title} />
+          <h3>{product.title}</h3>
+
+</Link>
 
       <p>₹{product.price}</p>
 
