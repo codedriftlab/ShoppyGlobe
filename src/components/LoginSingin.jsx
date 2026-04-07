@@ -4,6 +4,10 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Login Data:", { email, password });
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
