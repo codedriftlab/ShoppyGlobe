@@ -41,7 +41,8 @@ Users can browse products, view details, add items to cart, and place orders.
 1. Clone the repository:
 
 ```
-git clone https://github.com/codedriftlab/ShoppyGlobe.git
+git clone <https://github.com/codedriftlab/ShoppyGlobe.git>
+
 ```
 
 2. Navigate to project folder:
