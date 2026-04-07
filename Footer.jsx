@@ -35,6 +35,7 @@ function Footer() {
           </h3>
           <p className="text-sm">Email: support@shoppyglobe.com</p>
           <p className="text-sm">Phone: +91 9876543210</p>
+          <p className="text-sm">Address: 123 Market Street, Bengaluru, Karnataka</p>
         </div>
 
       </div>
