@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { MdNearbyError } from "react-icons/md";
+
 
 function NotFound() {
   return (
@@ -12,8 +14,8 @@ function NotFound() {
         </h1>
 
         {/* Message */}
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          Page Not Found
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2 flex items-center justify-center gap-2">
+          Page Not Found <MdNearbyError />
         </h2>
 
         <p className="text-gray-500 mb-6">
