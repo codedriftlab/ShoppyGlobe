@@ -8,6 +8,7 @@ import NotFound from './components/NotFound'
 import Checkout from './components/Checkout'
 import Home from './Home'
 import Footer from '../Footer'
+import Login from './components/LoginSingin'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
