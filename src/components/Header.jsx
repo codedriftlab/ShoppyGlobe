@@ -1,6 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  // get cart items from redux
+  const cartItems = useSelector(state => state.cart.items);
+
+  // calculate total quantity
+  const totalQuantity = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   return (
     <header className="bg-white text-black px-6 py-4 flex justify-between items-center shadow-2xl">
       {/* Logo */}
@@ -29,10 +39,21 @@ function Header() {
         </NavLink>
 
         <div className="relative">
-          <NavLink to="/cart" className={({ isActive }) =>
-            isActive ? "text-yellow-400" : "hover:text-yellow-300"
-          }>Cart</NavLink>
-            <span className="absolute -top-2 -right-6 bg-red-500 text-white text-xs px-2 py-1 rounded-full">4</span>
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400" : "hover:text-yellow-300"
+            }
+          >
+            Cart
+          </NavLink>
+
+          {/* Dynamic count */}
+          {totalQuantity > 0 && (
+            <span className="absolute -top-2 -right-6 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+              {totalQuantity}
+            </span>
+          )}
         </div>
       </nav>
 

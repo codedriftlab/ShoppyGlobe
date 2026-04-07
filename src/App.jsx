@@ -5,7 +5,9 @@ import ProductList from './components/ProductList'
 import ProductDetail from './components/ProductDetail'
 import Cart from './components/Cart'
 import NotFound from './components/NotFound'
+import Checkout from './components/Checkout'
 import Home from './Home'
+import Footer from '../Footer'
 
 const App = () => {
   return (
@@ -16,8 +18,10 @@ const App = () => {
           <Route path="/products" element={<ProductList />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
     </Router>
   )
 }

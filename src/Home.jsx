@@ -1,14 +1,33 @@
-import React from 'react'
-import ProductList from './components/ProductList'
-import ProductItem from './components/ProductItem'
+import ProductList from "./components/ProductList";
 
-const Home = () => {
+function Home() {
   return (
-<>
-    <ProductList />
-    <ProductItem />
-</>
-  )
+    <div className="bg-gray-100 min-h-screen">
+
+      {/* HERO SECTION */}
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6 text-center">
+        <h1 className="text-4xl font-bold mb-4">
+          Welcome to ShoppyGlobe 🛒
+        </h1>
+
+        <p className="text-lg mb-6">
+          Discover amazing products at the best prices
+        </p>
+
+        <a
+          href="#products"
+          className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200"
+        >
+          Shop Now
+        </a>
+      </div>
+
+      {/* PRODUCT SECTION */}
+      <div id="products" className="py-10">
+        <ProductList />
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
