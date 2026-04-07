@@ -15,6 +15,16 @@ function ProductDetails() {
         <h2 className="text-xl font-bold mt-4">{product.title}</h2>
         <p className="text-gray-600 mt-2">{product.description}</p>
         <p className="text-lg font-semibold mt-2">₹{product.price}</p>
+        <div className="mb-4">
+  <h3 className="font-semibold mb-2">Specifications:</h3>
+
+  {product.specs &&
+    Object.entries(product.specs).map(([key, value]) => (
+      <p key={key} className="text-gray-700">
+        <span className="font-medium capitalize">{key}:</span> {value}
+      </p>
+    ))}
+</div>
       </div>
     </div>
   );
