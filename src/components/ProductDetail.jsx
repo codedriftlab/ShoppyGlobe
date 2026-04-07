@@ -11,7 +11,7 @@ function ProductDetails() {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="bg-white p-6 rounded shadow w-96">
-        <img src={product.thumbnail} alt={product.title} />
+        <img style={{ maxWidth: "100%", height: "auto" }} src={product.thumbnail} alt={product.title} />
         <h2 className="text-xl font-bold mt-4">{product.title}</h2>
         <p className="text-gray-600 mt-2">{product.description}</p>
         <p className="text-lg font-semibold mt-2">₹{product.price}</p>
