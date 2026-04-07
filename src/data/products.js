@@ -18,7 +18,7 @@ const products = [
     title: "Samsung Galaxy S22",
     price: 70000,
     description: "Samsung flagship phone",
-    thumbnail: "https://api.samsungmobilepress.com/api/v1/file/BEB4E9A0290E5C11DCB88E288202ECCC2AF1A742231242CF82FC6A93EDC5CFAB8CFA4E6088D1032E93F9FAC5885765772B6FEAA92302243DCCB425FE739516954B13249ADA5794A4C0B64E7EE2AF35E278137C136B5149F3759008768EEEE73484EDA77B2F0E2B093A04CF55A8C92826C53F1D49304971AD8C2D29F41FDC0F1E428A66843D54CD7D6DE09C044B169CBB",
+    thumbnail: "https://s3bg.cashify.in/gpro/uploads/2021/04/10113602/samsung-galaxy-s22-front-display-1.jpg",
     specs: {
       ram: "8GB",
       processor: "Snapdragon 8 Gen 1",
@@ -215,11 +215,11 @@ const products = [
     id: 17,
     title: "Tablet",
     price: 20000,
-    description: "Android tablet",
+    description: "IOS tablet",
     thumbnail: "https://m.media-amazon.com/images/I/61uA2UVnYWL._SX679_.jpg",
     specs: {
       ram: "4GB",
-      processor: "Snapdragon",
+      processor: "A18 Bionic",
       storage: "64GB",
       display: "10 inch"
     }
