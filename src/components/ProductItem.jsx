@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function ProductItem({ product }) {
   const dispatch = useDispatch();
 
-  // ✅ safety check
+  // safety check
   if (!product) return null;
 
   return (
@@ -18,6 +18,8 @@ function ProductItem({ product }) {
 </Link>
 
       <p>₹{product.price}</p>
+
+      // add to cart button
 
       <button onClick={() => dispatch(addToCart(product))}>
         Add to Cart

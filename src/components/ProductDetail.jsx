@@ -2,13 +2,18 @@ import { useParams } from "react-router-dom";
 import products from "../data/products";
 
 function ProductDetails() {
-  const { id } = useParams();
+  const { id } = useParams();  // get id from url
 
+  // find product by id
   const product = products.find(p => p.id === Number(id));
 
+  // safety check
   if (!product) return <h2>Product not found</h2>;
 
   return (
+
+    // product details page
+
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="bg-white p-6 rounded shadow w-96">
         <img style={{ maxWidth: "100%", height: "auto" }} src={product.thumbnail} alt={product.title} />
@@ -16,6 +21,8 @@ function ProductDetails() {
         <p className="text-gray-600 mt-2">{product.description}</p>
         <p className="text-lg font-semibold mt-2">₹{product.price}</p>
         <div className="mb-4">
+
+  // specifications section using agian map to loop through specs object        
   <h3 className="font-semibold mb-2">Specifications:</h3>
 
   {product.specs &&
