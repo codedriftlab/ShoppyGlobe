@@ -15,7 +15,7 @@ function Header() {
     <header className="bg-white text-black px-6 py-4 flex justify-between items-center shadow-2xl">
       {/* Logo */}
       <Link to="/" className="text-2xl font-bold">
-        <span className="text-yellow-400">Shoppy</span>Globe<span className="text-yellow-400">.</span>
+        <span className="text-orange-300">Shoppy</span>Globe<span className="text-orange-300">.</span>
       </Link>
 
       {/* Navigation */}
