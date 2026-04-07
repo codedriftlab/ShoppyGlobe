@@ -1,4 +1,6 @@
 import ProductList from "./components/ProductList";
+import { TiShoppingCart } from "react-icons/ti";
+
 
 function Home() {
   return (
@@ -6,9 +8,7 @@ function Home() {
 
       {/* HERO SECTION */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6 text-center">
-        <h1 className="text-4xl font-bold mb-4">
-          Welcome to ShoppyGlobe 🛒
-        </h1>
+        <h1 className="text-4xl font-bold mb-4 flex items-center justify-center gap-2">Welcome to ShoppyGlobe<TiShoppingCart /></h1>
 
         <p className="text-lg mb-6">
           Discover amazing products at the best prices
